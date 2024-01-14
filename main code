@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempat Adopsi Kucing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("asset/kucing2.jpg");
+    background-size: contain;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8bb06;
+    color: white;
+}
+
+#logo-img {
+    width: 50px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    float: left;
+    margin-right: 850px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ecf0f1;
+}
+
+.anchor {
+    display: flex;
+    align-items: center;
+}
+
+.anchor a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.icons i {
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.icons i:hover {
+    color: #ecf0f1;
+    cursor: pointer;
+}
+
+main {
+    margin: 80px 20px;
+    text-align: center;
+    color: #2c3e50;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* New margin to separate content and email */
+}
+
+.content article {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.email {
+    flex: 1; /* Adjusted flex value */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+}
+
+.content article h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content article p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #0e0e0e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form label {
+    color: #0e0e0e;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #f8bb06;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+footer i:hover {
+    color: #ecf0f1;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="asset/logo.jpg" id="logo-img"/>
+        <h1>Cat Shelter and Rescue</h1>
+        <nav>
+            <ul>
+                <li><a href="">Harga</a></li>
+                <li><a href="">Profil</a></li>
+                <li><a href="">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <article>
+                <h1>Adopsi Kucing</h1>
+                <p>Temukan teman baru yang penuh kasih untuk diadopsi. Kucing-kucing kami siap memberikan kebahagiaan untuk keluarga Anda.</p>
+            </article>
+            <article>
+                <form>
+                    <label>Cari kucing kamu</label>
+                    <input type="email" placeholder="ketik nisa" id="email" name="email" required>
+                    <button type="submit">Cari</button>
+                </form>
+            </article>
+        </section>
+
+        <section class="email">
+        <form>
+            <h2>Kontak Kami</h2>
+            <label>Masukkan alamat email Anda:</label>
+            <input type="email" placeholder="rescue@gmail.com" id="subscribe-email" name="subscribe-email" required>
+            <button type="submit">Kirim</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cat Shelter and Rescue | Ikuti kami di <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i></p>
+    </footer>
+</body>
+</html>
